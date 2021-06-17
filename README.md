@@ -1,1 +1,3 @@
-# exemplo-graphql
+# Exemplo Graphql
+
+## Implementação Graphql utilizando GO
