@@ -101,5 +101,47 @@ query findCourses {
 ```
 ## Capitulos
 ### Criando um novo capitulo
-
+```GraphQL
+mutation createChapter {
+  createChapter(
+    input: {
+      name: "Introduction to Flask"
+      courseId: "T8674665223082153551"
+    }
+  ) {
+    id
+    name
+    course {
+      name
+    }
+  }
+}
+```
 ### Listando Capitulos
+```GraphQL
+query findChapters {
+  chapters {
+    id
+    name
+    course {
+      name
+    }
+  }
+}
+```
+### Resultado
+```GraphQL
+{
+  "data": {
+    "chapters": [
+      {
+        "id": "T6129484611666145821",
+        "name": "Introduction to Flask",
+        "course": {
+          "name": "Flask for Dummies"
+        }
+      }
+    ]
+  }
+}
+```
