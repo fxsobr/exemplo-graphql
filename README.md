@@ -40,6 +40,11 @@ query findCategories {
         "id": "T5577006791947779410",
         "name": "Python",
         "description": "Python is Awesome!",
+        "courses": [
+          {
+            "name": "Flask for Dummies"
+          }
+        ]
       }
     ]
   }
@@ -74,6 +79,10 @@ query findCourses {
     id
     name
     description
+    chapters {
+      id
+      name
+    }
     category {
       id
       description
@@ -90,6 +99,12 @@ query findCourses {
         "id": "T8674665223082153551",
         "name": "Flask for Dummies",
         "description": "Flask Course",
+        "chapters": [
+          {
+            "id": "T6129484611666145821",
+            "name": "Introduction to Flask"
+          }
+        ],
         "category": {
           "id": "T5577006791947779410",
           "description": "Python is Awesome!"
