@@ -31,6 +31,7 @@ query findCategories {
   }
 }
 ```
+### Resultado
 ```GraphQL
 {
   "data": {
@@ -80,6 +81,7 @@ query findCourses {
   }
 }
 ```
+### Resultado
 ```GraphQL
 {
   "data": {
